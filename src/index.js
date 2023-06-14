@@ -35,10 +35,10 @@ function onSelectBreed() {
         if (catEl) {
             infoBox.innerHTML += catEl;
         } else {
-            return Notiflix.Notify.failure(`❌ Oops! Some cat is lost!`);
+            return Notiflix.Notify.failure(`Oops! Cant find the cat!`);
         };
 
-    }).catch(() => { Notiflix.Notify.failure(`❌ Oops! Something went wrong! Try reloading the page!`) })
+    }).catch(() => { Notiflix.Notify.failure(`Oops! Something went wrong!`) })
         .finally(() => { loader.style.display = "none" });
 
 }
